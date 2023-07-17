@@ -77,9 +77,9 @@
 
 7/17
 
-![image]([picture or gif url](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH3/%E8%A6%8F%E5%8A%83.png))
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH3/%E8%A6%8F%E5%8A%83.png)
 
-![image]([picture or gif url](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH3/%E7%B5%90%E6%A7%8B.png))
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH3/%E7%B5%90%E6%A7%8B.png)
 
 : 讓一個物件的行為隨著內部狀態的改變而變化，而該物件也像換了類別一樣。
 
