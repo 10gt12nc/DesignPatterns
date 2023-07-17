@@ -114,7 +114,7 @@ PBaseDefenseGame 類別 = 整合所有子系統，並提供高階介面的外觀
 
 :確認類別只有一個物件，並且提供一個全域的方法來取得這個物件。
 
-![image]()
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH5%20Singleton/%E7%B5%90%E6%A7%8B.png)
 
 
 
@@ -123,7 +123,7 @@ PBaseDefenseGame 類別 = 整合所有子系統，並提供高階介面的外觀
 
 PBaseDefenseGame 串接 遊戲系統 & 玩家介面
 
-![image]()
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH6%20Mediator/%E7%B5%90%E6%A7%8B.png)
 
 
 <h1> Part 3.角色的設計</h1>
