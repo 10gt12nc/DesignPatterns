@@ -118,6 +118,12 @@ PBaseDefenseGame 類別 = 整合所有子系統，並提供高階介面的外觀
 
 
 
+<h3> Ch6.各系統整合 - Mediator 仲介者模式 </h3>
+
+
+PBaseDefenseGame 串接 遊戲系統 & 玩家介面
+
+![image]()
 
 
 <h1> Part 3.角色的設計</h1>
