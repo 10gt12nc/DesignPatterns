@@ -1,4 +1,3 @@
-
 # 書籍 : <設計模式與遊戲開發的完美結合> 博碩文化
 
 <h1> Part 1.設計模式 && 遊戲設計</h1>
@@ -13,9 +12,10 @@
 
 常見:
 
-‧單一職責原則 (SRP: Single Responsibility Principle)：
++‧單一職責原則 (SRP: Single Responsibility Principle)：
 當設計一個類別時，該類別應該只負責一個職責或功能。
 例如，一個 User 類別應該只負責處理使用者的資料，而不應該同時負責處理資料庫連接或發送郵件等功能。
+
 
 ‧開放封閉原則 (OCP: Open-Closed Principle)：
 軟體實體（類別、模組、函式等）應該對擴充開放，對修改關閉，透過介面或抽象化來實現。
@@ -26,7 +26,6 @@
 子類別必須能夠替換父類別，而不會破壞原有程式的正確性。
 如果有一個父類別 Animal，它有一個 makeSound() 方法。
 子類別如 Dog 或 Cat 應該可以替代父類別 Animal，而不影響原本的程式邏輯。例如，Dog 和 Cat 都可以實作自己的 makeSound() 方法，但仍然可以被視為 Animal 的替代品。
-
 
 ‧依賴性反向原則 (DIP: Dependency Inversion Principle)：
 1.高層模組不應該依賴於低層模組，兩者都應該依賴於抽象介面或共同的抽象層級。
@@ -47,6 +46,7 @@
 如果一個類別需要與其他多個類別進行互動，最好的做法是僅與直接相關的類別進行互動，減少類別之間的依賴關係。
 例如，一個 Order 類別不應該直接與 PaymentGateway 進行互動，而應該委派給一個 PaymentProcessor 類別處理支付相關的操作，從而降低了 Order 類別對於支付系統的知識和依賴。
 
+
 ‧少使用繼承，多使用組合是一種常見的設計原則，稱為"優先使用組合（Favor Composition Over Inheritance）"
 1.避免類別之間的緊密耦合，提高靈活性和可維護性。
 2.提高代碼的可讀性，降低複雜性。
@@ -58,11 +58,13 @@
 相反，我們可以使用組合來實現這個需求。首先，創建一個 Character 類別，它包含共同的屬性和行為，例如名字和攻擊。然後，分別創建 Warrior 和 Mage 類別，它們分別擁有獨特的屬性和方法。
 在每個類別中，將 Character 物件作為成員變數組合進來。這樣一來，每個角色類別可以使用 Character 物件來訪問共同的屬性和行為，同時根據自己的特性來實現額外的行為。
 
+
 <h3> Ch1-4.為什麼要學設計模式 </h3>
 
 學習先人智慧
 不必重新思考新的解決方案
 被驗證過的模式
+
 
 <h3> Ch1-6. </h3>
 
@@ -77,9 +79,9 @@
 
 7/17
 
-![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH3/%E8%A6%8F%E5%8A%83.png)
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH3%20State/%E8%A6%8F%E5%8A%83.png)
 
-![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH3/%E7%B5%90%E6%A7%8B.png)
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH3%20State/%E7%B5%90%E6%A7%8B.png)
 
 : 讓一個物件的行為隨著內部狀態的改變而變化，而該物件也像換了類別一樣。
 
@@ -96,15 +98,17 @@
 對應 開始場景、主畫面場景、 戰鬥場景
 
 
+
 <h3> Ch4.遊戲主要類別 - Facade 外觀模式 </h3>
 
-: ���l�t�Ωw�q�@�ղΤ@�������A�o�Ӱ����������|���l�t�Χ�e���Q�ϥΡC
+: 替子系統定義一組統一的介面，這個高階的介面會讓子系統更容易被使用。
 
-PBaseDefenseGame ���O = ��X�Ҧ��l�t�ΡA�ô��Ѱ����������~�[�Ҧ����O�C
 
-: ���l�t�Ωw�q�@�ղΤ@�������A�o�Ӱ����������|���l�t�Χ�e���Q�ϥΡC
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH4%20Facade/%E7%B5%90%E6%A7%8B.png)
 
-PBaseDefenseGame ���O = ��X�Ҧ��l�t�ΡA�ô��Ѱ����������~�[�Ҧ����O�C
+
+PBaseDefenseGame 類別 = 整合所有子系統，並提供高階介面的外觀模式類別。
+
 
 
 <h1> Part 3.角色的設計</h1>
