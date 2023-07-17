@@ -77,6 +77,8 @@
 
 7/17
 
+
+
 : 讓一個物件的行為隨著內部狀態的改變而變化，而該物件也像換了類別一樣。
 
 ‧GameLoop
@@ -90,6 +92,14 @@
 
 ‧StartState 、MainMenuState、BattleState
 對應 開始場景、主畫面場景、 戰鬥場景
+
+
+<h3> Ch4.遊戲主要類別 - Facade 外觀模式 </h3>
+
+
+
+
+
 
 <h1> Part 3.角色的設計</h1>
 <h1> Part 4.角色的產生</h1>
