@@ -120,13 +120,33 @@ PBaseDefenseGame 類別 = 整合所有子系統，並提供高階介面的外觀
 
 <h3> Ch6.各系統整合 - Mediator 仲介者模式 </h3>
 
+:定義一個介面用來包裝一群物件的互動行為。仲介者藉由移除物件間的引用，來減少他們之間的耦合。並能讓你改變他們之間的互動獨立性。
 
-PBaseDefenseGame 串接 遊戲系統 & 玩家介面
 
 ![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH6%20Mediator/%E7%B5%90%E6%A7%8B.png)
 
+PBaseDefenseGame 串接 遊戲系統 & 玩家介面
 
 <h1> Part 3.角色的設計</h1>
+
+<h3> Ch8.角色系統的設計分析 -  </h3>
+
+![image]()
+
+<h3> Ch9.角色與武器的實作 - Bridge 橋接模式 </h3>
+
+:將抽象與實作分離，讓他們之間的變化獨立。(定義一個介面類別，然後將實作的部分在子類別中完成)。
+
+![image]()
+
+<h3> Ch10.角色數值的計算 - Strategy 策略模式 </h3>
+
+:定義一群演算法，並封裝每個演算法，讓他們可以彼此交換使用。策略模式讓這些演算法在客戶端使用它們時能更加獨立。
+
+![image]()
+
+
+
 <h1> Part 4.角色的產生</h1>
 <h1> Part 5.戰爭開始</h1>
 <h1> Part 6.輔助系統</h1>
