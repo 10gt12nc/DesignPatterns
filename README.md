@@ -251,11 +251,45 @@ protected ICharacterAttr m_Attribute = null;
 <h2>  Ch11.攻擊特效與擊中反應 - Template Method 樣板方法模式 </h2>
 
 
-:在一個操作方法中定義演算法的流程，當中某些步驟由子類別完成。樣板方法模式讓子類別在不更動員有演算法的流程下，還能夠重新定義當中的步驟。
+![image]()
+
+:在一個操作方法中定義演算法的流程，當中某些步驟由子類別完成。樣板方法模式讓子類別在不更動原有演算法的流程下，還能夠重新定義當中的步驟。
+
+‧ IWeapon
+攻擊目標 Fire 方法中，執行步驟宣告為抽象方法
+// 顯示武器子彈特效(子類別實作)
+DoShowBulletEffect(theTarget);
+// 顯示音效(子類別實作)
+DoShowSoundEffect();
+<br>
+// 顯示武器子彈特效
+protected abstract void DoShowBulletEffect(ICharacter theTarget);
+// 顯示音效
+protected abstract void DoShowSoundEffect();
+
+‧ WeaponGun、WeaponRifle、WeaponRocket ...
+實作 IWeapon 中需要被實作的 抽象方法
 
 
+![image]()
 
-
+‧ ICharacter
+// 被攻擊
+ public abstract void UnderAttack
+ 
+‧ ISoldier、IEnemy
+UnderAttack
+DoPlayKilledSound();    // 音效
+DoShowKilledEffect();   // 特效           
+// 播放音效
+public abstract void DoPlayKilledSound();
+// 播放特效
+public abstract void DoShowKilledEffect();
+	
+‧ ISoldier 陣營 : Captain上尉、Rookie新兵、Sergeant中士
+實作 
+‧ IEnemy 陣營 : Troll山妖、Ogre怪物、Elf精靈
+實作 
 
 
 <h2>  Ch12.角色AI - State 狀態模式 </h2>
