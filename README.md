@@ -197,7 +197,7 @@ PBaseDefenseGame.Instance. ...
 
 <h2>  Ch8.角色系統的設計分析 -  </h2>
 
-![image]()
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH8%20ICharacter/%E8%A6%8F%E5%8A%83.png)
 
 ‧ ICharacter
 ‧ ISoldier
@@ -206,7 +206,7 @@ PBaseDefenseGame.Instance. ...
 <h2>  Ch9.角色與武器的實作 - Bridge 橋接模式 </h2>
 
 
-![image]()
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/CH9%20Bridge/%E8%A6%8F%E5%8A%83.png)
 
 :將抽象與實作分離，讓他們之間的變化獨立。(定義一個介面類別，然後將實作的部分在子類別中完成)。
 
@@ -223,7 +223,7 @@ PBaseDefenseGame.Instance. ...
 <h2>  Ch10.角色數值的計算 - Strategy 策略模式 </h2>
 
 
-![image]()
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/Ch10%20Strategy/%E8%A6%8F%E5%8A%83.png)
 
 :定義一群演算法，並封裝每個演算法，讓他們可以彼此交換使用。策略模式讓這些演算法在客戶端使用它們時能更加獨立。
 
@@ -251,7 +251,7 @@ protected ICharacterAttr m_Attribute = null;
 <h2>  Ch11.攻擊特效與擊中反應 - Template Method 樣板方法模式 </h2>
 
 
-![image]()
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/Ch11%20Template%20Method/%E8%A6%8F%E5%8A%831.png)
 
 :在一個操作方法中定義演算法的流程，當中某些步驟由子類別完成。樣板方法模式讓子類別在不更動原有演算法的流程下，還能夠重新定義當中的步驟。
 
@@ -271,7 +271,7 @@ protected abstract void DoShowSoundEffect();
 實作 IWeapon 中需要被實作的 抽象方法
 
 
-![image]()
+![image](https://github.com/10gt12nc/DesignPatterns/blob/main/Imge/Ch11%20Template%20Method/%E8%A6%8F%E5%8A%832.png)
 
 ‧ ICharacter
 // 被攻擊
