@@ -241,10 +241,10 @@ protected ICharacterAttr m_Attribute = null;
 ‧ IAttrStrategy
 角色數值計算界面，分離 ICharacterAttr，讓 ICharacterAttr 更容易更換計算策略。
 
-‧ EnemyAttr
+‧ EnemyAttrStrategy
 實作 敵方單位的數值計算策略
 
-‧ SoldierAttr
+‧ SoldierAttrStrategy
 實作 玩家單位(士兵)的數值計算策略
 
 
@@ -277,7 +277,7 @@ protected abstract void DoShowSoundEffect();
 // 被攻擊
  public abstract void UnderAttack
  
-‧ ISoldier、IEnemy
+‧ ISoldier
 UnderAttack
 DoPlayKilledSound();    // 音效
 DoShowKilledEffect();   // 特效           
@@ -285,6 +285,14 @@ DoShowKilledEffect();   // 特效
 public abstract void DoPlayKilledSound();
 // 播放特效
 public abstract void DoShowKilledEffect();
+
+‧ IEnemy
+UnderAttack
+DoPlayHitSound(); 
+DoShowHitEffect();
+public abstract void DoPlayHitSound(); 
+public abstract void DoShowHitEffect();
+ 
 	
 ‧ ISoldier 陣營 : Captain上尉、Rookie新兵、Sergeant中士
 實作 
